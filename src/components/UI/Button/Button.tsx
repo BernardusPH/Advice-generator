@@ -6,11 +6,12 @@ interface ButtonProps{
     onClick:()=>void;
     className:string
     children:ReactNode;
+    ar_label:string;
 }
-// box-shadow: 0 0 40px var(--Neon-Green);
-const Button = ({disabled,onClick,className,children}:ButtonProps) => {
+
+const Button = ({disabled,onClick,className,children,ar_label}:ButtonProps) => {
   return (
-    <motion.button whileHover={{boxShadow:"0 0 40px var(--Neon-Green)"}} disabled={disabled} onClick={onClick} className={classes[className]} >{children}</motion.button>
+    <motion.button aria-label={ar_label} whileHover={{boxShadow:"0 0 40px var(--Neon-Green)"}} disabled={disabled} onClick={onClick} className={classes[className]} >{children}</motion.button>
   )
 }
 

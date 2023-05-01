@@ -60,6 +60,7 @@ function MainComponent() {
       <Button
         className="dice-button"
         disabled={disableButton}
+        ar_label={"dice-for-advice"}
         onClick={() => {
           generateQuote(1000);
           setButtonState();
