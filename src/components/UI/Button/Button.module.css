@@ -30,7 +30,9 @@
   }
 
   @media (max-width:550px){
-   
+    .dice-button:hover{
+      box-shadow: none !important;
+    }
       .dice-button:active {
         box-shadow: 0 0 40px var(--Neon-Green);
       }
