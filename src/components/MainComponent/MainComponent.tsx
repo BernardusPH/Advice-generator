@@ -64,7 +64,7 @@ function MainComponent() {
         onClick={() => {
           generateQuote(1000);
           setButtonState();
-          console.log("eff");
+        
         }}
       >
         <DiceSvg disabled={disableButton} />
