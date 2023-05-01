@@ -1,0 +1,15 @@
+.advice-id{
+    color:var(--Neon-Green);
+    font-size: .5em;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3.46px;
+   
+}
+
+
+@media screen and (max-width:550px){
+    .advice-id{
+        font-size: .4em;
+    }
+}

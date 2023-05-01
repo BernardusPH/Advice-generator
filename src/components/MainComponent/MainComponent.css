@@ -1,0 +1,33 @@
+.main-advice-card {
+  width: 540px;
+  height: 364px;
+  background-color: var(--Dark-Grayish-Blue);
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+ 
+}
+.main-advice-card>*{
+  margin: auto;
+}
+.desktop-divider{
+  display: block;
+}
+.mobile-divider{
+  display: none;
+}
+
+@media(max-width:550px){
+  .main-advice-card{
+    width:343px;
+    height:325px;
+    padding: 2rem .5rem;
+  }
+  .desktop-divider{
+    display: none;
+  }
+  .mobile-divider{
+    display: block;
+  }
+}

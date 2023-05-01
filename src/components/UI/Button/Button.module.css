@@ -1,0 +1,39 @@
+/* button style */
+.dice-button {
+    all: unset;
+    outline: transparent;
+    cursor: pointer;
+    width: 64px;
+    margin: auto;
+    aspect-ratio: 1/1;
+    background-color: var(--Neon-Green);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: -1rem;
+    left:50%;
+    transform:translateX(-50%);
+
+
+  }
+  .dice-button:focus-visible {
+    outline: 1px solid black;
+    box-shadow: 0 0 40px var(--Neon-Green);
+  }
+ 
+  .dice-button:disabled {
+    cursor: not-allowed;
+  }
+  .dice-button:disabled:disabled:hover {
+    box-shadow: none;
+  }
+
+  @media (max-width:550px){
+   
+      .dice-button:active {
+        box-shadow: 0 0 40px var(--Neon-Green);
+      }
+  }
+
+  

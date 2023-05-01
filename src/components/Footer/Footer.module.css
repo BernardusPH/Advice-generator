@@ -1,0 +1,11 @@
+.footer{
+    font-size: .5rem;
+    position: absolute;
+    left:0;
+    top:0;
+    color:var(--Light-Cyan)
+
+}
+.footer a{
+    color: var(--Neon-Green);
+}
