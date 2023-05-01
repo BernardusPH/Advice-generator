@@ -1,13 +1,13 @@
-
+import {motion} from "framer-motion"
 import classes from "./AdviceQuote.module.css"
 interface AdviceQuote {
   disableButton: boolean;
   quote: string;
 }
-// &ldquo; &rdquo;
+
 const AdviceQuote = ({ disableButton, quote }: AdviceQuote) => {
   const displayQuote =quote === "" ? "Please press the button to get advice" : quote;
-  return <div className={classes["advice-quote"]}>{disableButton ? "LOADING...." : <q>{displayQuote}</q> }</div>;
+  return <motion.div key={quote} initial={{scale:0}} animate={{scale:1}} className={classes["advice-quote"]}>{disableButton ? "LOADING...." : <q>{displayQuote}</q> }</motion.div>;
 };
 
 export default AdviceQuote;
