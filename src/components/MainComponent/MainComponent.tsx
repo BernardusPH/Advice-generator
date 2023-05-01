@@ -15,7 +15,7 @@ function MainComponent() {
   });
   const [disableButton, setdisableButton] = useState<boolean>(false);
 
-  const generateQuote = (timer: number) => {
+  const generateQuote = (timer: number):void => {
     setTimeout(() => {
       Axios.get("https://api.adviceslip.com/advice")
         .then((resp) => {
@@ -64,7 +64,7 @@ function MainComponent() {
         onClick={() => {
           generateQuote(1000);
           setButtonState();
-          console.log("eff");
+        
         }}
       >
         <DiceSvg disabled={disableButton} />
