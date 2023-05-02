@@ -1,9 +1,7 @@
 .footer{
     font-size: .5rem;
-    position: absolute;
-    left:0;
-    top:0;
-    color:var(--Light-Cyan)
+    color:var(--Light-Cyan);
+    margin-top: auto;
 
 }
 .footer a{
