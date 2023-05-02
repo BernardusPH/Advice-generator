@@ -8,7 +8,7 @@ const DiceSvg = ({ disabled }: DiceSvgProps) => {
     <motion.svg
       key={buttondisabled}
       animate={{ rotate: disabled ? "720deg" : " " }}
-      transition={{ type: "spring", stiffness: 400, damping:100 }}
+      transition={{ type: "spring", stiffness: 400, }}
       width="24"
       height="24"
       xmlns="http://www.w3.org/2000/svg"
