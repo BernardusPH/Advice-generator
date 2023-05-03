@@ -22,7 +22,8 @@ function MainComponent() {
           const newId = resp.data.slip.id;
 
           if (newId !== advice.id) {
-            setAdvice({ quote: resp.data.slip.advice, id: newId });
+            const decodedString = decodeURIComponent(escape(resp.data.slip.advice));
+            setAdvice({ quote:decodedString , id: newId });
             setdisableButton(false);
           } else {
             generateQuote(1000);

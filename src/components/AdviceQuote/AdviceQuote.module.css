@@ -1,6 +1,6 @@
 .advice-quote {
   margin: 1rem .5rem .5rem .5rem;
-  height: 160px;
+  height: 180px;
   font-size: 1rem;
   color: var(--Light-Cyan);
   letter-spacing: -0.3px;
@@ -9,7 +9,7 @@
 @media (max-width: 550px) {
   .advice-quote {
     margin: .5rem ;
-    height: 140px;
+    height: 150px;
     font-size: 0.8rem;
   }
 }
