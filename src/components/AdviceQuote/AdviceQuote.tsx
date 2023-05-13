@@ -48,7 +48,7 @@ const LoadingComponent = () => {
     </div>
   );
 };
-console.log(LoadingComponent);
+
 
 const AdviceQuote = ({ disableButton, quote }: AdviceQuote) => {
   const displayQuote =
